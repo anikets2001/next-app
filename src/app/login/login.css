@@ -1,0 +1,17 @@
+.login-wrapper {
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.login-wrapper > button {
+    border: 1px solid rgb(223, 233, 240);
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: #000;
+    font-weight: 600;
+    background-color: rgb(192, 192, 245);
+    cursor: pointer;
+}

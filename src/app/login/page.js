@@ -1,18 +1,23 @@
-"use client"
-import Link from "next/link";
-import React from "react";
+"use client";
+import "./login.css";
 import { useRouter } from "next/navigation";
+import React from "react";
 
 const Login = () => {
   const router = useRouter();
 
-  const handleNavigation=(route)=> {
-    router.push(route)
-  }
+  const handleNavigate = (route) => {
+    router.push(`/login${route}`);
+  };
+
   return (
-    <div>
-      <Link href="/about">Go to About page</Link>
-      <button onClick={()=> handleNavigation('/about')}>Go to About Page</button>
+    <div className="login-wrapper">
+      <button onClick={() => handleNavigate("/loginStudent/1234")}>
+        Student Login
+      </button>
+      <button onClick={() => handleNavigate("/loginTeacher/1234")}>
+        Teacher Login
+      </button>
     </div>
   );
 };
