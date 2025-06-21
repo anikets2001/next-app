@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/navigation";
 
-const page = () => {
+const Login = () => {
   const router = useRouter();
 
   const handleNavigation=(route)=> {
@@ -17,4 +17,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Login;

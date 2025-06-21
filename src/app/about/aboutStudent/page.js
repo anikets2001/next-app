@@ -1,9 +1,9 @@
 import React from 'react'
 
-const page = () => {
+const AboutStudent = () => {
   return (
     <div>About Student</div>
   )
 }
 
-export default page
+export default AboutStudent
