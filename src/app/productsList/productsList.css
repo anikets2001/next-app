@@ -1,0 +1,36 @@
+.products-wrapper {
+  padding: 24px;
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.product-card {
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 6px;
+  width: 24%;
+}
+
+.card-heading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-wrapper {
+  height: 100px;
+  width: 100px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.image-wrapper > img {
+  height: 100%;
+  width: 100%;
+}
