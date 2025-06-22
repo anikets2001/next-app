@@ -64,3 +64,36 @@ const page = ({params}) => {
 
 export default page
 ---*/
+
+/*---
+
+route segments
+If you want to access all the segments of a path, then 
+step1: create a root folder e.g. study
+step2: create a subfolder with three dot(.) in starting e.g. [...lecture]
+step3: crate a page.js file inside this folder
+step4: inside this page.js you can now access the array of segments
+
+"use client";
+import React from "react";
+
+const Lecture = ({ params }) => {
+  // this segment will now give us an array of all segments of path
+  const segment = React.use(params);
+  console.log(segment.lecture[0]);
+
+  return (
+    <div>
+      <ul>
+        {segment.lecture.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default Lecture;
+
+
+---*/
