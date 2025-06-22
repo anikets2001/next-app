@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+button {
+  background-color: rgb(148, 166, 247);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid gray;
+}
+
 .main-header {
   background-color: white;
   padding: 24px;
@@ -19,4 +29,13 @@
 .link {
   text-decoration: none;
   color: #000;
+}
+
+.not-found-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
