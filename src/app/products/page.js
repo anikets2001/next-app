@@ -1,6 +1,7 @@
 // this is a server component for fetching products api
 import Price from "./Price";
 import "./products.css";
+import style from "./product.module.css";
 
 const apiUrl = "https://dummyjson.com/products?limit=50";
 
@@ -14,19 +15,18 @@ export default async function page() {
   const products = await Products();
 
   return (
-    <div className="products-wrapper">
+    <div className={style.productsWrapper}>
       <h1>Products List ({products.length})</h1>
-      <div className="card-wrapper">
+      <div className={style.cardWrapper}>
         {products.map((product) => (
-          <div key={product?.id} className="product-card">
-            <div className="card-heading-wrapper">
+          <div key={product?.id} className={style.productCard}>
+            <div className={style.cardHeadingWrapper}>
               <p>Title: {product?.title}</p>
 
               {/* using client component inside a server component */}
               <Price title={"check price"} price={product?.price} />
-              
             </div>
-            <div className="image-wrapper">
+            <div className={style.imageWrapper}>
               <img src={product?.thumbnail} alt={product?.title} />
             </div>
             <div>
