@@ -27,4 +27,30 @@ export default Layout
 
 it will render a common layout to all the children pages of this page
 imp: this common layout will not remount on navigation (persistent by default)
+
+conditional layout:
+
+to conditionally rendering the layout we can use a hook usePathname 
+as in the below component
+
+"use client";
+import { usePathname } from "next/navigation";
+import React from "react";
+
+const Layout = ({ children }) => {
+  const pathName = usePathname();
+  return (
+    <div>
+      conditional layout (showing layout only for student login)
+      {pathName.includes("loginStudent") ? (
+        <h1>Welcome to the login section, choose student/teacher login</h1>
+      ) : null}
+
+      {children}
+    </div>
+  );
+};
+
+export default Layout;
+
 ---*/
