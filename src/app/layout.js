@@ -26,6 +26,9 @@ export default function RootLayout({ children }) {
             <Link href={"/"} className="link">
               Home
             </Link>
+            <Link href={"/studentsList"} className="link">
+              StudentsList
+            </Link>
             <Link href={"/about"} className="link">
               About
             </Link>
