@@ -1,9 +1,10 @@
-// this is a server component for fetching products api
+// this is a client component for fetching products api
 
 "use client";
 import "./productsList.css";
 import { useState, useEffect } from "react";
 import React from "react";
+
 
 const apiUrl = "https://dummyjson.com/products?limit=50";
 

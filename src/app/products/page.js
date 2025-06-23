@@ -3,6 +3,13 @@ import Price from "./Price";
 import "./products.css";
 import style from "./product.module.css";
 
+export function generateMetadata(){
+  return {
+    title: 'Products List',
+    description: 'server side products list '
+  }
+}
+
 const apiUrl = "https://dummyjson.com/products?limit=50";
 
 async function Products() {
