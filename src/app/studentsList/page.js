@@ -1,15 +1,17 @@
 import Link from "next/link";
+import Script from "next/script";
 
-export function generateMetadata(){
+export function generateMetadata() {
   return {
-    title: 'Students page',
-    description: 'students page description'
-  }
+    title: "Students page",
+    description: "students page description",
+  };
 }
 
 const StudentsList = () => {
   return (
     <div>
+      <Script src="/location.js" />
       <ul>
         <li>
           <Link href={"/studentsList/aniket"}>Aniket</Link>
