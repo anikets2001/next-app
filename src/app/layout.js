@@ -26,6 +26,9 @@ export default function RootLayout({ children }) {
             <Link href={"/"} className="link">
               Home
             </Link>
+            <Link href={"/users"} className="link">
+              Users
+            </Link>
             <Link href={"/productsList"} className="link">
               Products (client side)
             </Link>

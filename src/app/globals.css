@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.p-24 {
+  padding: 24px;
+}
+
 button {
   background-color: rgb(148, 166, 247);
   padding: 8px 16px;
