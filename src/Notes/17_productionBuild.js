@@ -67,5 +67,20 @@ Prepares static/SSR pages
 npm start
 
 
+
+
+How to deploy you next app on vercel
+
+run command npm run build
+
+step1: go to vercel.com, login with github
+step2: go to projects
+step3: import you repo 
+step4: click deploy
+step5: you can also choose the domain here
+step6: you will get a production url
+step7: go to that url, you will see the app 
+step8: you don't have to manually deploy latest features again and again you just push the code 
+       on github and it will automatically be deployed
 ---*/
 
