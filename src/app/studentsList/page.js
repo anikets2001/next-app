@@ -1,5 +1,11 @@
-import React from "react";
 import Link from "next/link";
+
+export function generateMetadata(){
+  return {
+    title: 'Students page',
+    description: 'students page description'
+  }
+}
 
 const StudentsList = () => {
   return (

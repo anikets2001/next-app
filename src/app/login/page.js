@@ -1,7 +1,6 @@
 "use client";
 import "./login.css";
 import { useRouter } from "next/navigation";
-import React from "react";
 
 const Login = () => {
   const router = useRouter();
