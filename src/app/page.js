@@ -1,7 +1,6 @@
 "use client";
 import { Roboto } from "next/font/google";
 import styles from "./page.module.css";
-import HomePage from "../assets/homepage.webp";
 import Image from "next/image";
 
 const roboto = Roboto({ weight: "100", subsets: ["latin"], display: "swap" });
@@ -16,7 +15,7 @@ export default function Home() {
         {/* Local Image - Responsive */}
         <div style={{ position: "relative", width: "100%", height: "500px" }}>
           <Image
-            src={HomePage}
+            src={'/assets/images/homepage.webp'}
             alt="homepage"
             fill
             style={{ objectFit: "cover", margin: "0 auto" }}
