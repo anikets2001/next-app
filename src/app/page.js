@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div>
-        <h1>Home Page</h1>
+        <h1>Home Page modified</h1>
         <h2 className={roboto.className}>Font with next js font feature</h2>
 
         {/* Local Image - Responsive */}
