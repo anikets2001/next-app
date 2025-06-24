@@ -21,6 +21,8 @@ async function Products() {
 export default async function page() {
   const products = await Products();
 
+  console.log(process.env.SERVER_PASSWORD)
+
   return (
     <div className={style.productsWrapper}>
       <h1>Products List ({products.length})</h1>
