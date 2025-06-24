@@ -1,8 +1,14 @@
 import Link from "next/link";
 import getUsers from "../../../services/getUsers";
+import { redirect } from "next/navigation";
 
 export default async function Users() {
   const users = await getUsers();
+
+  const isLoggedIn = true;
+  if (!isLoggedIn) {
+    redirect("/login");
+  }
 
   return (
     <div className="p-24">
